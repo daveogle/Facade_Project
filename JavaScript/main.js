@@ -4,6 +4,17 @@
  * and open the template in the editor.
  */
 $(document).ready(function () {
+    
+    var filename = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+    if(filename === "index.php")
+    {
+        $("#left").hide();
+    }
+    else if(filename === "reading.php")
+    {
+        $("#right").hide();
+    }
+    
     $(".box").hover(
             function () {
                 //stuff to do on mouse enter
@@ -44,6 +55,8 @@ $(document).ready(function () {
             }
         });
     }
+    
+    //function to take current page and a left or right direction and return the correct page request
 });
 
 

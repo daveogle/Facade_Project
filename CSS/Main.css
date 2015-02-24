@@ -31,30 +31,35 @@ body
     padding: 3%;
 }
 
-.boxWrapper
+#boxWrapper
 {
-    width : 100%;
-    margin: 0 auto;
+    text-align: justify;
 }
 
-.box
+#boxWrapper .box
 {
+    width: 100px; /* Declare your value. Can be in relative units. */
     display: inline-block;
-    margin-left: 4%;
-    position : relative;
+    vertical-align: top;
     width: 80px;
     height: 80px;
     background-color: yellow;
     box-shadow: 10px 10px 5px #888888;
 }
 
+#boxWrapper:after
+{
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
 .box h2
 {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
+    margin-right: 80%;
     transform: translate(-50%, -50%)
 }
 

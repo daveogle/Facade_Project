@@ -6,16 +6,22 @@ if (isset($_GET['page'])) : {
                 echo "index.php";
                 break;
             case "second":
-                echo "#";
+                echo "what.php";
                 break;
             case "third":
-                echo"#";
+                echo"when.php";
                 break;
             case "fourth":
-                echo"#";
+                echo"keyFeatures.php";
                 break;
             case "fifth":
-                echo "Quiz.php";
+                echo "variations.php";
+                break;
+            case "sixth":
+                echo "quiz.php";
+                break;
+            case "seventh":
+                echo "reading.php";
                 break;
         }
     }
