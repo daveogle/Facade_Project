@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-Feb-2015, 11:27:18
+    Author     : Dave Ogle
+*/
+body
+{
+}
+
+.mainContent
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.Wrapper
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.NavBar
+{
+    position: relative;
+    margin : 2%;
+    background: blue;
+    padding: 3%;
+}
+
+.boxWrapper
+{
+    width : 100%;
+    margin: 0 auto;
+}
+
+.box
+{
+    display: inline-block;
+    margin-left: 4%;
+    position : relative;
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.box h2
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.NavButton
+{
+    width: 100%;
+}
+
+.NavButton img
+{
+    margin: 0px;
+    position : fixed;
+    width : 100px;
+    height: 100px;
+}
+
+#right
+{
+    float: right;  
+    margin-right: 8%;
+}
+
+#left
+{
+    float: left;
+    margin-left: 1%;
+}
