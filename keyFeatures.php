@@ -4,7 +4,39 @@ include("Include/navigation.html");
 ?>
 <div class ="mainContent">
     <H2>Key Features</H2>
-    <p>key features</p>
+    <p>A breakdown of the key features of the Facade Design Pattern are:</p>        
+    <div class="table-wrapper">
+        <table>
+            <tr>
+                <td>The Situation:</td>
+                <td>You wish to simplify an existing complex system and/or you need to define your own interface to the system.</td>
+            </tr>
+            <tr>
+                <td>The Problem:</td>
+                <td>You only need to use a small part of the existing system and/or you need to interact with the system in a specific way</td>
+            </tr>
+            <tr>
+                <td>The Solution:</td>
+                <td>Use the Facade Pattern to create a new interface to the existing system</td>
+            </tr>
+            <tr>
+                <td>Beneficiaries:</td>
+                <td>Anyone using the new interface to the system</td>
+            </tr>
+            <tr>
+                <td>Implementation:</td>
+                <td>Define a new class (or classes) that interacts with the relevant classes of the existing system instead of calling them directly</td>
+            </tr>
+            <tr>
+                <td>Benefits:</td>
+                <td>Simplify the use of the sub-system, greater control over system access</td>   
+            </tr>
+            <tr>
+                <td>Downside:</td>
+                <td>Certain functionality of the sub-system may be unavailable through the facade</td>
+            </tr>
+        </table>
+    </div>
 </div>
 <?php
 include("Include/footer.html");

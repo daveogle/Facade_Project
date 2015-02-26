@@ -9,18 +9,21 @@ if (isset($_GET['page'])) : {
                 echo "what.php";
                 break;
             case "third":
-                echo"when.php";
+                echo "when.php";
                 break;
             case "fourth":
                 echo"keyFeatures.php";
                 break;
             case "fifth":
-                echo "variations.php";
+                echo"variations.php";
                 break;
             case "sixth":
-                echo "quiz.php";
+                echo "examples.php";
                 break;
             case "seventh":
+                echo "quiz.php";
+                break;
+            case "eighth":
                 echo "reading.php";
                 break;
         }

@@ -12,6 +12,7 @@ include("Include/navigation.html");
     <H2>Contents</H2>
     <p>In the following tutorial you will learn:</p>
     <ol>
+        <li>Contents</li>
         <li>What is the Facade Pattern?</li>
         <li>When should I use the Facade Pattern?</li>
         <li>What are the key features of the Facade Pattern?</li>
