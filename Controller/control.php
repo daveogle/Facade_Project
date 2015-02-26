@@ -2,28 +2,28 @@
 
 if (isset($_GET['page'])) : {
         switch ($_GET['page']) {
-            case "first":
+            case "index":
                 echo "index.php";
                 break;
-            case "second":
+            case "what":
                 echo "what.php";
                 break;
-            case "third":
+            case "when":
                 echo "when.php";
                 break;
-            case "fourth":
+            case "keyFeatures":
                 echo"keyFeatures.php";
                 break;
-            case "fifth":
+            case "variations":
                 echo"variations.php";
                 break;
-            case "sixth":
+            case "examples":
                 echo "examples.php";
                 break;
-            case "seventh":
+            case "quiz":
                 echo "quiz.php";
                 break;
-            case "eighth":
+            case "reading":
                 echo "reading.php";
                 break;
         }

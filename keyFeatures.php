@@ -1,3 +1,4 @@
+<link href="CSS/keyFeatures.css" rel="stylesheet" type="text/css"/>
 <?php
 include("Include/header.html");
 include("Include/navigation.html");
@@ -8,31 +9,31 @@ include("Include/navigation.html");
     <div class="table-wrapper">
         <table>
             <tr>
-                <td>The Situation:</td>
+                <td><strong>The Situation:</strong></td>
                 <td>You wish to simplify an existing complex system and/or you need to define your own interface to the system.</td>
             </tr>
             <tr>
-                <td>The Problem:</td>
+                <td><strong>The Problem:</strong></td>
                 <td>You only need to use a small part of the existing system and/or you need to interact with the system in a specific way</td>
             </tr>
             <tr>
-                <td>The Solution:</td>
+                <td><strong>The Solution:</strong></td>
                 <td>Use the Facade Pattern to create a new interface to the existing system</td>
             </tr>
             <tr>
-                <td>Beneficiaries:</td>
+                <td><strong>Beneficiaries:</strong></td>
                 <td>Anyone using the new interface to the system</td>
             </tr>
             <tr>
-                <td>Implementation:</td>
+                <td><strong>Implementation:</strong></td>
                 <td>Define a new class (or classes) that interacts with the relevant classes of the existing system instead of calling them directly</td>
             </tr>
             <tr>
-                <td>Benefits:</td>
+                <td><strong>Benefits:</strong></td>
                 <td>Simplify the use of the sub-system, greater control over system access</td>   
             </tr>
             <tr>
-                <td>Downside:</td>
+                <td><strong>Downside:</strong></td>
                 <td>Certain functionality of the sub-system may be unavailable through the facade</td>
             </tr>
         </table>
