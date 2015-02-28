@@ -26,7 +26,10 @@ $questionId = array("question1", "question2", "question3", "question4", "questio
         ?>
         <form id="answerQuiz">
             <input type="submit" value="Check answers">
-        </form> 
+        </form>
+        
+        <div class="result">
+        </div>
     </div>
 </div>
 <?php
