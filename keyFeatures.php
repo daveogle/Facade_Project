@@ -34,7 +34,7 @@ include("Include/navigation.html");
             </tr>
             <tr>
                 <td><strong>Downside:</strong></td>
-                <td>Certain functionality of the sub-system may be unavailable through the facade</td>
+                <td>Certain functionality of the sub-system may be unavailable to the client.</td>
             </tr>
         </table>
     </div>
