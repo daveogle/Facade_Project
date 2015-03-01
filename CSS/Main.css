@@ -93,7 +93,7 @@ body
 
 
 
-#boxWrapper li .box:hover, #boxWrapper li .doneBox:hover { background: #FFCC00; }
+#boxWrapper li .box:hover, #boxWrapper li .doneBox:hover { background: #FFCC00 !important; }
 #boxWrapper li .box:hover:after, #boxWrapper li .doneBox:hover:after { border-left-color: #FFCC00 !important; }
 
 
