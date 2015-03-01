@@ -11,7 +11,13 @@ include("Include/navigation.html");
        This differs in an important way from a very similar design pattern, the Adapter Pattern, which aims to adapt interfaces to match the expectations of a client.
        A facade also serves another important purpose, it decouples clients reliant on a subsystem from the subsystem itself, provided that the client is coded to the facade rather than the subsystem.
        In practice this means that any alterations made to how the subsystem operates does not require changes be made to the client just to the facade.</p>
-       
+    
+    
+    <hr/>
+    
+    <h4>References</h4>
+    <h6>FREEMAN, E. et al. (2004) <i>Head First Design Patterns.</i> Sebastopol, Calif.: O'Reilly </h6>
+    
 </div>
 <?php
 include("Include/footer.html");
