@@ -17,15 +17,48 @@ body
     font-size: 25px;
 }
 
+.mainContent h2
+{
+    
+    font-family: 'Quicksand', sans-serif;
+    //background: #000 url("../Images/repeat.png") repeat-x;
+    height: 54px;
+    padding-top: 14px;
+    margin-bottom: 0px;
+}
+
+.content
+{
+    background: #3c3c3c;
+    border-left: 2px solid #595959;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-right: 2px solid #595959;
+    color: #DDD;
+    padding: 10px;
+}
+
+.content p
+{
+    margin-top: 0px;
+}
+
 .Wrapper
 {
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 20px;
+}
+
+.Wrapper h1
+{
+    font-family: 'Quicksand', sans-serif;
 }
 
 .NavBar
 {
     position: relative;
+    width: 100%;
     //margin : 2%;
     //background: blue;
     //padding: 3%;
@@ -35,7 +68,9 @@ body
 {
     list-style: none; 
     overflow: hidden; 
-    font: 14px Helvetica, Arial, Sans-Serif;
+    font: 16px Helvetica, Arial, sans-serif;
+    font-size: 1.3vw;
+    padding-left: 0px;
 }
 
 #boxWrapper li
@@ -48,8 +83,8 @@ body
     color: white;
     text-decoration: none; 
     padding: 10px 0 10px 40px;
-    background: teal;                   /* fallback color */
-    background: #77c2ae; 
+    background: lightblue;                   /* fallback color */
+    background: #77a3c2; 
     position: relative; 
     display: block;
     float: left;
@@ -62,7 +97,7 @@ body
 	height: 0;
 	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
 	border-bottom: 50px solid transparent;
-	border-left: 30px solid #77c2ae;
+	border-left: 30px solid #77a3c2;
 	position: absolute;
 	top: 50%;
 	margin-top: -50px; 
@@ -72,7 +107,7 @@ body
 
 #boxWrapper .doneBox:after 
 {
-    border-left-color: #77a5c2;
+    border-left-color: #3a5795;
 }
 
 #boxWrapper .box:before, #boxWrapper .doneBox:before { 
@@ -93,8 +128,8 @@ body
 
 
 
-#boxWrapper li .box:hover, #boxWrapper li .doneBox:hover { background: #FFCC00 !important; }
-#boxWrapper li .box:hover:after, #boxWrapper li .doneBox:hover:after { border-left-color: #FFCC00 !important; }
+#boxWrapper li .box:hover, #boxWrapper li .doneBox:hover { background: #3377c3 !important; }
+#boxWrapper li .box:hover:after, #boxWrapper li .doneBox:hover:after { border-left-color: #3377c3 !important; }
 
 
 .box h2
@@ -110,15 +145,6 @@ body
 .NavButton
 {
     width: 100%;
-}
-
-.NavButton img
-{
-    margin: 0px;
-    margin-top: 20%;
-    position : fixed;
-    width : 100px;
-    height: 100px;
 }
 
 .NavButton img
@@ -147,5 +173,3 @@ body
     float: left;
     margin-left: 1%;
 }
-
-
