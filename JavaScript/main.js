@@ -138,7 +138,7 @@ function colourUpTo(pageNumber)
     for (var i = 1; i <= pageNumber; i++)
     {
         //var page = $(getPageName(i));
-        document.getElementById(getPageName(i)).style.background = "rgb(119, 165, 194)";
+        document.getElementById(getPageName(i)).style.background = "rgb(58, 87, 149)";
         document.getElementById(getPageName(i)).className = "doneBox";
     }
 }
