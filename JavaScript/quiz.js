@@ -88,7 +88,7 @@ $(document).ready(function () {
                 if ($('label[for="' + id + '"]').html() === answers[id.charAt(1)][0])
                 {
                     $(this).replaceWith(function () {
-                        return $('<span><img src="Images/correct.png" alt="right answer" style="width:30px;height:30px"></span>');
+                        return $('<img src="Images/correct.png" alt="right answer" style="width:30px;height:30px;vertical-align: middle;">');
                     });
                     score = score + 1;
                 }
@@ -96,7 +96,7 @@ $(document).ready(function () {
                 if ($('label[for="' + id + '"]').html() !== answers[id.charAt(1)][0])
                 {
                     $(this).replaceWith(function () {
-                        return $('<span><img src="Images/wrong.jpeg" alt="wrong answer" style="width:30px;height:30px"></span>');
+                        return $('<img src="Images/wrong.jpeg" alt="wrong answer" style="width:30px;height:30px;vertical-align: middle;">');
                     });
                 }
             }
@@ -106,9 +106,9 @@ $(document).ready(function () {
                 {
                     $('label[for="' + id + '"]').css({'background-color': 'lime'});
                 }
-                $(this).replaceWith(function () {
-                    return $('<span><div style="width:30px;height:30px;float:left"></div></span>');
-                });
+//                $(this).replaceWith(function () {
+//                    return $('<div style="width:30px;height:30px;float:left;"></div>');
+//                });
             }
         });
         $("div.result").html("<p><em><strong>Your Score: </strong>" + score + " / 10</em></p>");

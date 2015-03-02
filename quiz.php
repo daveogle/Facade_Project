@@ -17,7 +17,7 @@ $questionId = array("question1", "question2", "question3", "question4", "questio
             echo "<h3></h3>";
             echo "<form>";
             for ($j = 0; $j < 4; $j++) {
-                echo "<input type=\"radio\" id=\"Q" . $i . $j . "\" name=\"questionList\"/><label for=\"Q" . $i . $j . "\">question</label>";
+                echo "<span><input type=\"radio\" id=\"Q" . $i . $j . "\" name=\"questionList\"/><label style=\"vertical-align: middle\" for=\"Q" . $i . $j . "\">question</label></span>";
                 echo "<br>";
             }
             echo "</form>";
