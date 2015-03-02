@@ -15,6 +15,8 @@ include("Include/navigation.html");
         A facade also serves another important purpose, it decouples clients reliant on a subsystem from the subsystem itself, provided that the client is coded to the facade rather than the subsystem.
         In practice this means that any alterations made to how the subsystem operates do not require changes be made to the client, just to the facade.</p>
 
+    <img src="Images/simpleFacade.png" alt="Facade Example" class="center" style="width: 60%; height: 60%; "/>
+    
     <p>The decoupling between client and complex subsystem also helps reduce the number of objects which the client has to interact with, helping to adhere to the 'Principle of Least Knowledge' or 'Law of demeter'.
         Essentially reducing the dependencies which the client has, to the facade rather than the potentially many classes in the subsystem, and thus the likely-hood of changes cascading through the system. This helps to
         improve software by making it easier to maintain and more adaptable. However it is important to keep in mind that this can lead to more wrapper classes being written which can increase time and space overheads, thus
@@ -33,4 +35,4 @@ include("Include/navigation.html");
 include("Include/footer.html");
 /*
  * End of file
- */
+ */ 
