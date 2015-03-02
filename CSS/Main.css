@@ -121,6 +121,21 @@ body
     height: 100px;
 }
 
+.NavButton img
+{
+    margin: 0px;
+    margin-top: 20%;
+    position : fixed;
+    width : 100px;
+    height: 100px;
+    opacity: 0.25;
+}
+
+.NavButton img:hover
+{
+    opacity: 0.75;
+}
+
 #right
 {
     float: right;  
