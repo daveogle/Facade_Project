@@ -81,18 +81,22 @@ $(document).ready(function () {
     $("#answerQuiz").submit(function (e) {
         e.preventDefault();
         score = 0;
+        var correctAnswer = false;
         $('input:radio').each(function () {
             var $this = $(this), id = $this.attr('id');
-            //if the answer is correct
-            if ($(this).prop('checked')) {
+            var qNumber = parseInt(id.charAt(1)) + 1;
+            if ($(this).prop('checked')) {//if the box is checked
+                //if the answer is correct
                 if ($('label[for="' + id + '"]').html() === answers[id.charAt(1)][0])
                 {
+                    score = score + 1;
+                    correctAnswer = true;
+                    $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/correct.png\" alt=\"right answer\" style=\"width:80px;height:80px;vertical-align: middle;\">");
                     $(this).replaceWith(function () {
                         return $('<img src="Images/correct.png" alt="right answer" style="width:30px;height:30px;vertical-align: middle;">');
                     });
-                    score = score + 1;
                 }
-//if the answer is false
+                //if the answer is false
                 if ($('label[for="' + id + '"]').html() !== answers[id.charAt(1)][0])
                 {
                     $(this).replaceWith(function () {
@@ -100,15 +104,29 @@ $(document).ready(function () {
                     });
                 }
             }
-            else
+            else //if not checked
             {
+                //if the answer is right
                 if ($('label[for="' + id + '"]').html() === answers[id.charAt(1)][0])
                 {
-                    $('label[for="' + id + '"]').css({'background-color': 'lime'});
+                    $(this).replaceWith(function () {
+                        return $('<img src="Images/correct.png" alt="right answer" style="width:30px;height:30px;vertical-align: middle;">');
+                    });
                 }
-                $(this).replaceWith(function () {
-                    return $('<div style="width:30px;height:30px;float:left;"></div>');
-                });
+                else
+                {
+                    $(this).replaceWith(function () {
+                        return $('<div style="width:30px;height:30px;float:left;"></div>');
+                    });
+                }
+            }
+            if (parseInt(id.charAt(2)) === 3 && !correctAnswer)
+            {
+                $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/wrong.jpeg\" alt=\"wrong answer\" style=\"width:80px;height:80px;vertical-align: middle;\">");
+            }
+            else if (parseInt(id.charAt(2)) === 3)
+            {
+                correctAnswer = false;
             }
         });
         $("div.result").html("<p><em><strong>Your Score: </strong>" + score + " / 10</em></p>");
