@@ -8,7 +8,7 @@ include("Include/navigation.html");
     <p>The Facade Design Pattern is an example of a structural design pattern. These patterns aim to identify simple ways in which relationships between objects/entities in a system can be formed.
         In the case of the Facade Design Pattern the following is a formal definition:</p>
 
-    <p>"The Facade Pattern provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use" (Freeman et al. 2004)</p>
+    <p>"The Facade Pattern provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use" (Gamma et al. 1995)</p>
 
     <p>In essence the basic purpose of the Facade Design Pattern is to offer a simplified, easy to use interface to a more complicated subsystem. 
         This differs in an important way from a very similar structural design pattern, the Adapter Pattern, which aims to adapt interfaces to match the expectations of a client.
@@ -23,6 +23,7 @@ include("Include/navigation.html");
     <hr/>
 
     <h4>References</h4>
+    <h6>Gamma, E. et al. (1995) <i>Design Patterns: Elements of Reusable Object-Oriented Software</i> Boston: Addison-Wesley</h6>
     <h6>FREEMAN, E. et al. (2004) <i>Head First Design Patterns.</i> Sebastopol, Calif.: O'Reilly </h6>
     <h6>APPLETON, B. (?) <i>Introducing Demeter and its Laws</i> [Online] Available from: http://www.bradapp.com/docs/demeter-intro.html [Accessed: 27th February 2015]</h6>
     <h6>The Pragmatic Bookshelf (?) <i>Tell, Don't Ask</i> [Online] Available from: https://pragprog.com/articles/tell-dont-ask [Accessed: 27th February 2015]</h6>
