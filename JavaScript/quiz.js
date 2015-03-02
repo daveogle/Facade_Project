@@ -106,9 +106,9 @@ $(document).ready(function () {
                 {
                     $('label[for="' + id + '"]').css({'background-color': 'lime'});
                 }
-//                $(this).replaceWith(function () {
-//                    return $('<div style="width:30px;height:30px;float:left;"></div>');
-//                });
+                $(this).replaceWith(function () {
+                    return $('<div style="width:30px;height:30px;float:left;"></div>');
+                });
             }
         });
         $("div.result").html("<p><em><strong>Your Score: </strong>" + score + " / 10</em></p>");
