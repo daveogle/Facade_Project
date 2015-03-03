@@ -21,15 +21,7 @@ include("Include/navigation.html");
         Essentially reducing the dependencies which the client has, to the facade rather than the potentially many classes in the subsystem, and thus the likely-hood of changes cascading through the system. This helps to
         improve software by making it easier to maintain and more adaptable. However it is important to keep in mind that this can lead to more wrapper classes being written which can increase time and space overheads, thus
         leading to a trade off between more coupling and inefficiency.</p>
-
-    <hr/>
-
-    <h4>References</h4>
-    <h6>Gamma, E. et al. (1995) <i>Design Patterns: Elements of Reusable Object-Oriented Software</i> Boston: Addison-Wesley</h6>
-    <h6>FREEMAN, E. et al. (2004) <i>Head First Design Patterns.</i> Sebastopol, Calif.: O'Reilly </h6>
-    <h6>APPLETON, B. (?) <i>Introducing Demeter and its Laws</i> [Online] Available from: http://www.bradapp.com/docs/demeter-intro.html [Accessed: 27th February 2015]</h6>
-    <h6>The Pragmatic Bookshelf (?) <i>Tell, Don't Ask</i> [Online] Available from: https://pragprog.com/articles/tell-dont-ask [Accessed: 27th February 2015]</h6>
-
+    <br>
 </div>
 <?php
 include("Include/footer.html");
