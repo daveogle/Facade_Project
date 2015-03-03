@@ -5,7 +5,6 @@
  */
 //QUESTIONS
 var score = 0;
-
 var q1 = "Q1) In which senario would use of the Facade Design Pattern be most appropriate?";
 var q2 = "Q2) Why is it called the Facade Pattern?";
 var q3 = "Q3) How can the Facade Pattern increase system security?";
@@ -16,13 +15,10 @@ var q7 = "Q7) Select a senario where the Facade Pattern would apply.";
 var q8 = "Q8) Is it possible to add functionality to the original system with the Facade Pattern?";
 var q9 = "Q9) Name a disadvantage of using the Facade Pattern.";
 var q10 = "Q10) Select the best analogy a of the Facade Pattern in real life.";
-
 //Array holding all question id's
 var questionId = ["question1", "question2", "question3", "question4", "question5", "question6", "question7", "question8", "question9", "question10"];
-
 //Array holding all questions
 var question = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
-
 //ANSWERS (Answer [0] must always be the correct answer to the question)
 var answers1 = ["You need to interact with a small part an existing complex system.",
     "You need to define rules for creating objects.",
@@ -65,14 +61,12 @@ var answers10 = ["Use of a human petrol station attendant to interact with a com
     "Use of a production line to speed up production of cars.",
     "Use of a lever to move a heavy object more easily."];
 var answers = [answers1, answers2, answers3, answers4, answers5, answers6, answers7, answers8, answers9, answers10];
-
 //JQuery
 $(document).ready(function () {
-    //Populate the quiz from the above arrays.
+//Populate the quiz from the above arrays.
     $.each(questionId, function (index, value) {
         $("#" + value + " h3").html(question[index]);
     });
-
     for (var i = 0; i < 10; i++)
     {
         var randomArray = createRandomArray();
@@ -83,38 +77,62 @@ $(document).ready(function () {
         }
     }
 
-    //Prevent page re-load
+//Answer Quiz
     $("#answerQuiz").submit(function (e) {
         e.preventDefault();
-    });
-
-    //Answer Quiz
-    $("#answerQuiz").submit(function () {
         score = 0;
+        var correctAnswer = false;
         $('input:radio').each(function () {
             var $this = $(this), id = $this.attr('id');
-            //if the answer is correct
-            if ($('label[for="' + id + '"]').html() === answers[id.charAt(1)][0])
-            {
-                $('label[for="' + id + '"]').css({'background-color': 'lime'});
-            }
-            //if the answer is false
-            if ($(this).prop('checked')) {//Check if a box is checked
+            var qNumber = parseInt(id.charAt(1)) + 1;
+            if ($(this).prop('checked')) {//if the box is checked
+                //if the answer is correct
+                if ($('label[for="' + id + '"]').html() === answers[id.charAt(1)][0])
+                {
+                    score = score + 1;
+                    correctAnswer = true;
+                    $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/correct.png\" alt=\"right answer\" style=\"width:80px;height:80px;vertical-align: middle;\">");
+                    $(this).replaceWith(function () {
+                        return $('<img src="Images/correct.png" alt="right answer" style="width:30px;height:30px;vertical-align: middle;">');
+                    });
+                }
+                //if the answer is false
                 if ($('label[for="' + id + '"]').html() !== answers[id.charAt(1)][0])
                 {
-                    $('label[for="' + id + '"]').css({'background-color': 'red'});
+                    $(this).replaceWith(function () {
+                        return $('<img src="Images/wrong.jpeg" alt="wrong answer" style="width:30px;height:30px;vertical-align: middle;">');
+                    });
+                }
+            }
+            else //if not checked
+            {
+                //if the answer is right
+                if ($('label[for="' + id + '"]').html() === answers[id.charAt(1)][0])
+                {
+                    $(this).replaceWith(function () {
+                        return $('<img src="Images/correct.png" alt="right answer" style="width:30px;height:30px;vertical-align: middle;">');
+                    });
                 }
                 else
                 {
-                    score = score + 1;
+                    $(this).replaceWith(function () {
+                        return $('<div style="width:30px;height:30px;float:left;"></div>');
+                    });
                 }
+            }
+            if (parseInt(id.charAt(2)) === 3 && !correctAnswer)
+            {
+                $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/wrong.jpeg\" alt=\"wrong answer\" style=\"width:80px;height:80px;vertical-align: middle;\">");
+            }
+            else if (parseInt(id.charAt(2)) === 3)
+            {
+                correctAnswer = false;
             }
         });
         $("div.result").html("<p><em><strong>Your Score: </strong>" + score + " / 10</em></p>");
         $('html, body').scrollTop($(document).height());
     });
 });
-
 /**
  * Create a array with the numbers 1 - 4 stored randomly within
  * 
