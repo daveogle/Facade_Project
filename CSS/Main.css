@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 /* 
     Created on : 24-Feb-2015, 11:27:18
-    Author     : Dave Ogle
+    Author     : Dave Ogle, Andrew Pond
 */
 body
 {
@@ -17,42 +17,121 @@ body
     font-size: 25px;
 }
 
+.mainContent h2
+{
+    
+    font-family: 'Quicksand', sans-serif;
+    //background: #000 url("../Images/repeat.png") repeat-x;
+    height: 54px;
+    padding-top: 14px;
+    margin-bottom: 0px;
+}
+
+.content
+{
+    background: #3c3c3c;
+    border-left: 2px solid #595959;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-right: 2px solid #595959;
+    color: #DDD;
+    padding: 10px;
+}
+
+.content p
+{
+    margin-top: 0px;
+}
+
 .Wrapper
 {
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 20px;
+}
+
+.Wrapper h1
+{
+    font-family: 'Quicksand', sans-serif;
 }
 
 .NavBar
 {
     position: relative;
-    margin : 2%;
-    background: blue;
-    padding: 3%;
+    width: 100%;
+    //margin : 2%;
+    //background: blue;
+    //padding: 3%;
 }
 
 #boxWrapper
 {
-    text-align: justify;
+    list-style: none; 
+    overflow: hidden; 
+    font: 16px Helvetica, Arial, sans-serif;
+    font-size: 1.3vw;
+    padding-left: 0px;
 }
 
-#boxWrapper .box
+#boxWrapper li
 {
-    width: 100px; /* Declare your value. Can be in relative units. */
-    display: inline-block;
-    vertical-align: top;
-    width: 80px;
-    height: 80px;
-    background-color: yellow;
-    box-shadow: 10px 10px 5px #888888;
+    float: left;
 }
 
-#boxWrapper:after
+#boxWrapper li .box, #boxWrapper li .doneBox
 {
-    content: '';
-    width: 100%;
-    display: inline-block;
+    color: white;
+    text-decoration: none; 
+    padding: 10px 0 10px 40px;
+    background: lightblue;                   /* fallback color */
+    background: #77a3c2; 
+    position: relative; 
+    display: block;
+    float: left;
 }
+
+#boxWrapper .box:after, #boxWrapper .doneBox:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid #77a3c2;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}
+
+#boxWrapper .doneBox:after 
+{
+    border-left-color: #3a5795;
+}
+
+#boxWrapper .box:before, #boxWrapper .doneBox:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;       
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}
+
+
+
+#boxWrapper li .box:hover, #boxWrapper li .doneBox:hover { background: #3377c3 !important; }
+#boxWrapper li .box:hover:after, #boxWrapper li .doneBox:hover:after { border-left-color: #3377c3 !important; }
+
+
 .box h2
 {
     margin: 0;
@@ -75,6 +154,12 @@ body
     position : fixed;
     width : 100px;
     height: 100px;
+    opacity: 0.25;
+}
+
+.NavButton img:hover
+{
+    opacity: 0.75;
 }
 
 #right
