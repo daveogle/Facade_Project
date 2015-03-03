@@ -13,10 +13,10 @@ include("Include/navigation.html");
     <p>In the following tutorial you will learn:</p>
     <ol>
         <li>Contents</li>
-        <li>What is the Facade Pattern?</li>
-        <li>When should I use the Facade Pattern?</li>
-        <li>What are the key features of the Facade Pattern?</li>
-        <li>What variations of the Facade Pattern are there?</li>
+        <li>What is the Façade Pattern?</li>
+        <li>When should I use the Façade Pattern?</li>
+        <li>What are the key features of the Façade Pattern?</li>
+        <li>What variations of the Façade Pattern are there?</li>
         <li>Some real world examples</li>
         <li>Test your knowledge</li>
         <li>Further reading</li>
