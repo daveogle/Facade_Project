@@ -18,7 +18,7 @@ include("Include/navigation.html");
     <h3>Supplement</h3>
     <p>
         Other variation of Facade pattern is supplement of existing functions with new routines. This is more of a addition to traditional use of facade. 
-        Facade class still stores the subset of the class(number of methods)but it also contains some additional new functionality, usually based on the subset stored.
+        The Façade class contains methods from subsystem classes but it also contains some additional new functionality, usually based on the the subsystem methods.
     </p>
     <img src="Images/SupplementEx.png" alt="Suppliment Example" class="center"/>
     <h3>
