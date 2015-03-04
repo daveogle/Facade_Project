@@ -20,7 +20,7 @@ footer
 .mainContent
 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .mainContent h2
@@ -262,4 +262,10 @@ h6
 .table-wrapper tbody
 {
     vertical-align: top;
+}
+
+.codeBox div
+{
+    height: 400px;
+    font-size: 15px;
 }
