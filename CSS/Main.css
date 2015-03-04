@@ -11,6 +11,12 @@ body
 {
 }
 
+footer
+{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;  
+}
+
 .mainContent
 {
     font-family: 'Quicksand', sans-serif;
@@ -19,7 +25,7 @@ body
 
 .mainContent h2
 {
-    
+
     font-family: 'Quicksand', sans-serif;
     //background: #000 url("../Images/repeat.png") repeat-x;
     height: 54px;
@@ -80,6 +86,7 @@ body
 
 #boxWrapper li .box, #boxWrapper li .doneBox
 {
+    cursor: default;
     color: white;
     text-decoration: none; 
     padding: 10px 0 10px 40px;
@@ -91,18 +98,18 @@ body
 }
 
 #boxWrapper .box:after, #boxWrapper .doneBox:after { 
-	content: " "; 
-	display: block; 
-	width: 0; 
-	height: 0;
-	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
-	border-bottom: 50px solid transparent;
-	border-left: 30px solid #77a3c2;
-	position: absolute;
-	top: 50%;
-	margin-top: -50px; 
-	left: 100%;
-	z-index: 2; 
+    content: " "; 
+    display: block; 
+    width: 0; 
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #77a3c2;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px; 
+    left: 100%;
+    z-index: 2; 
 }
 
 #boxWrapper .doneBox:after 
@@ -111,19 +118,19 @@ body
 }
 
 #boxWrapper .box:before, #boxWrapper .doneBox:before { 
-	content: " "; 
-	display: block; 
-	width: 0; 
-	height: 0;
-	border-top: 50px solid transparent;       
-	border-bottom: 50px solid transparent;
-	border-left: 30px solid white;
-	position: absolute;
-	top: 50%;
-	margin-top: -50px; 
-	margin-left: 1px;
-	left: 100%;
-	z-index: 1; 
+    content: " "; 
+    display: block; 
+    width: 0; 
+    height: 0;
+    border-top: 50px solid transparent;       
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px; 
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1; 
 }
 
 
@@ -172,4 +179,12 @@ body
 {
     float: left;
     margin-left: 1%;
+}
+
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

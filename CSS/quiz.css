@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-Mar-2015, 20:25:20
+    Author     : Dave Ogle
+*/
+
+.resultImage
+{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
+
+.question h3 
+{
+    float: left;
+    width: 80%;
+}
+
+.questionTitle 
+{
+    width: 100%;
+    float: left;
+}

@@ -58,7 +58,6 @@ $(document).ready(function () {
             data: 'page=' + page,
             success: function (msg)
             {
-                alert(msg);
                 location.href = msg;
             },
             error: function ()

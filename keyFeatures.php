@@ -5,7 +5,7 @@ include("Include/navigation.html");
 ?>
 <div class ="mainContent">
     <H2>Key Features</H2>
-    <p>A breakdown of the key features of the Facade Design Pattern are:</p>        
+    <p>A breakdown of the key features of the Façade Design Pattern are:</p>        
     <div class="table-wrapper">
         <table>
             <tr>
@@ -18,7 +18,7 @@ include("Include/navigation.html");
             </tr>
             <tr>
                 <td><strong>The Solution:</strong></td>
-                <td>Use the Facade Pattern to create a new interface to the existing system</td>
+                <td>Use the Façade Pattern to create a new interface to the existing system</td>
             </tr>
             <tr>
                 <td><strong>Beneficiaries:</strong></td>
