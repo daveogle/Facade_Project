@@ -25,11 +25,12 @@ $questionId = array("question1", "question2", "question3", "question4", "questio
             echo "</div>";
         }
         ?>
-        <form id="answerQuiz">
-            <input type="submit" value="Check answers">
-        </form>
-        
-        <div class="result">
+        <div class="sols">
+            <div class="result">
+            </div>
+            <form id="answerQuiz">
+                <input type="submit" value="Check answers" class="btn-style">
+            </form>
         </div>
     </div>
 </div>
