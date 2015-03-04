@@ -12,22 +12,25 @@ include("Include/navigation.html");
         More formally this can be described as follows:
     </p>
 
-    <div class="quote">
+    <div class="quote center">
         <p>
-            "The Façade Pattern provides a unified interface to a set of interfaces in a subsystem. Façade defines a higher-level interface that makes the subsystem easier to use" (Gamma et al. 1995)
+            The Façade Pattern provides a unified interface to a set of interfaces in a subsystem. Façade defines a higher-level interface that makes the subsystem easier to use. (Gamma et al. 1995)
         </p>
     </div>
-
-    <img src="Images/simpleFacade.png" alt="Façade Example" class="center" style="width: 60%; height: 60%; "/>
-    
+   
     <p>
         Let's look at what this means in practice. 
-        In essence the basic purpose of the Façade Design Pattern is to offer a simplified, easy to use interface to a more complicated subsystem. 
+        In essence the basic purpose of the Façade Design Pattern is to offer a simplified, easy to use interface to a more complicated subsystem as illustrated below.
+    </p>
+    
+    <img src="Images/simpleFacade.png" alt="Façade Example" class="center" style="width: 60%; height: 60%; "/>
+    
+    <p>    
         This differs in an important way from a very similar structural design pattern, 
         the Adapter Pattern, which aims to adapt interfaces to match the expectations of a client.
     </p>
     <p>
-        A Façade also serves another important purpose, it decouples a clients reliance on a subsystem from the subsystem itself,
+        As can be seen from the diagram a Façade also serves another important purpose, it decouples a clients reliance on a subsystem from the subsystem itself,
         provided that the client is coded to the Façade rather than the subsystem.
         This means that any alterations made to how the subsystem operates do not require changes be made to the client, just to the Façade.
     </p>
@@ -37,9 +40,9 @@ include("Include/navigation.html");
         helping to adhere to the 'Principle of Least Knowledge' which is described more formally as the 'Law of demeter'.
     </p>
     
-    <div class="definition">
+    <div class="definition center">
         <p>
-        Principle of Least Knowledge - talk only to your immediate friends.
+        Principle of Least Knowledge - talk only to your immediate friends. (Freeman et al. 2004)
         </p>
     </div>    
         
