@@ -5,7 +5,7 @@ include("Include/navigation.html");
 <div class ="mainContent">
     <H2>Variations</H2>
     <p>
-        Most of the time Facade pattern is used in order to create a simpler interface for connecting to the application you are interested in.    
+        Most of the time Façade pattern is used in order to create a simpler interface for connecting to the application you are interested in.    
         however there are some variations which can be applied to the Façade Pattern, let's take a look at some of these variations now.</p>
 </p>
 
@@ -19,7 +19,7 @@ include("Include/navigation.html");
     Another variation of Façade pattern is the supplementation of existing functions with new routines, this is more of an addition to the traditional use of Façade.
     The Façade class contains methods from subsystem classes but it also contains some additional new functionality, usually extending the subsystem methods.
 </p>
-<img src="Images/SupplementEx.png" alt="Suppliment Example" title="Suppliment Example" class="center"/>
+<img src="Images/SupplementEx.png" alt="Supplement Example" title="Supplement Example" class="center"/>
 <h3>
     Encapsulation
 </h3>

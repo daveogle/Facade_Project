@@ -3,14 +3,14 @@ include("Include/header.html");
 include("Include/navigation.html");
 ?>
 <div class ="mainContent">
-    <h2>When should I use the Facade Design Pattern?</h2>
+    <h2>When should I use the Façade Design Pattern?</h2>
     
     <h3>A simple interface in a complex system</h3>
-    <p>The facade pattern should be used in situations where you would prefer to have a simpler single interface 
+    <p>The façade pattern should be used in situations where you would prefer to have a simpler single interface 
         rather than utilising a more complex subsystem.</p>
 
     <p>For example, in web services, one web service might provide access to a number of smaller services that have 
-    been hidden from the caller by the facade. It can be applied when a lot of complex classes are used to make a system simpler for users, as well as when only one class is used, to avoid using it directly. </p>
+    been hidden from the caller by the façade. It can be applied when a lot of complex classes are used to make a system simpler for users, as well as when only one class is used, to avoid using it directly. </p>
     </br>
 
     <h3>Duplications</h3>
@@ -23,11 +23,11 @@ include("Include/navigation.html");
     </br>
 
     <h3>System changes frequently</h3>
-    <p>Facade accesses the subsystems for the client, so if they change often, it does not affect the client, as facade deals with it. </p>
+    <p>Façade accesses the subsystems for the client, so if they change often, it does not affect the client, as façade deals with it. </p>
      </br>
 
-    <h3>Facade vs Adapter patterns</h3>
-    <p>The Adapter Pattern and the Facade Pattern solve different problems. The intent of the Adapter Pattern is to adapt one classes interface into an expected interface used by an existing client class or classes. The intent of the Facade Pattern is to simplify the API of a subsystem. </p>
+    <h3>Façade vs Adapter patterns</h3>
+    <p>The Adapter Pattern and the Façade Pattern solve different problems. The intent of the Adapter Pattern is to adapt one classes interface into an expected interface used by an existing client class or classes. The intent of the Facade Pattern is to simplify the API of a subsystem. </p>
      </br>
 
      <h3>Simple example (not sure if it is needed)</h3>
@@ -38,7 +38,7 @@ include("Include/navigation.html");
     <p>In this case, instead of doing everything on your own, you should use a wedding planner and make sure the job 
         gets done in a well-managed manner with less chance of a mistake. </p>
 
-    <p>Here, you are behaving as a client who initiates the process, and the wedding planner is working as a "facade" 
+    <p>Here, you are behaving as a client who initiates the process, and the wedding planner is working as a "façade" 
         for you, completing the job based on your direction. </p>
 
 </div>
