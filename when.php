@@ -3,7 +3,7 @@ include("Include/header.html");
 include("Include/navigation.html");
 ?>
 <div class ="mainContent">
-    <h2><i>When should I use the Façade Design Pattern?</i></h2>
+    <h2>When should I use the Façade Design Pattern?</h2>
     
     <h3>A simple interface in a complex system</h3>
            <p>Now we have seen what the Façade pattern is we will turn our attention to when to use it.
@@ -22,17 +22,20 @@ include("Include/navigation.html");
         several places.</p>
     <p>The client will just call the lead controller to perform actions based on the parameters 
         provided. </p>
-    </br>
+    <br>
 
     <h3>System changes frequently</h3>
-    <p>Façade accesses the subsystems for the client, so if they change often, it does not affect the client, as façade deals with it. </p>
+        <p>A interesting extension to the Façade pattern is encapsulation, as we will see later in <strong>Variations.</strong>
+          Because the Façade accesses the subsystem for the client swapping out the subsystem can be made a lot easier through the use of the Façade class.</p>
+     <br>
+
     <img src ="Images/facade_adv.jpg" alt ="System changes">
     
     </br>
      
     <h3>Façade vs Adapter patterns</h3>
     <p>The Adapter Pattern and the Façade Pattern solve different problems. The intent of the Adapter Pattern is to adapt one classes interface into an expected interface used by an existing client class or classes. The intent of the Facade Pattern is to simplify the API of a subsystem. </p>
-     </br>
+     <br>
 
      <h3>Simple example</h3>
     <p>Let's say that you have been given a task to plan your friend's marriage. If you do everything on your own, 
