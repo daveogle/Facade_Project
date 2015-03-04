@@ -72,167 +72,95 @@ include("Include/navigation.html");
 <pre>
 <span _fck_bookmark="1" style="display: none;"> </span></pre>
 <div>
-	<pre>
-	public class Computer</pre>
-</div>
-<div>
-	&nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; private readonly CPU _cpu;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; private readonly HardDrive _hardDrive;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; private readonly Memory _memory;</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; private const long BootAddress = 1;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; private const long BootSector = 1;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; private const int SectorSize = 10;</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; public Computer()</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _cpu = new CPU();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _hardDrive = new HardDrive();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _memory = new Memory();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; public void Start()</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _cpu.Freeze();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _memory.Load(BootAddress, _hardDrive.Read(BootSector, SectorSize));</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _cpu.Jump(BootAddress);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _cpu.Execute();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; public class CPU</div>
-<div>
-	&nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; public void Freeze()</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Console.WriteLine(&quot;CPU is frozen&quot;);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; public void Jump(long position)</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Console.WriteLine(&quot;Jumping to position: {0}&quot;, position);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; public void Execute()</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Console.WriteLine(&quot;Executing...&quot;);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; public class HardDrive</div>
-<div>
-	&nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; public byte[] Read(long lba, int size)</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var bytes = new byte[size];</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var random = new Random();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; random.NextBytes(bytes);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return bytes;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; public class Memory</div>
-<div>
-	&nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; public void Load(long position, byte[] data)</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Console.WriteLine(&quot;Loading data: &quot;);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; foreach (var b in data)</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Console.Write(b+ &quot; &quot;);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thread.Sleep(1000);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Console.WriteLine(&quot;\nLoading compleded&quot;);</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp; &nbsp; }</div>
-<div>
-	&nbsp;</div>
-<div>
-	&nbsp; &nbsp; class Program</div>
-<div>
-	&nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; static void Main()</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; {</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var computer = new Computer();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; computer.Start();</div>
-<div>
-	&nbsp; &nbsp; &nbsp; &nbsp; }</div>
-<div>
-	&nbsp; &nbsp; }</div>
 
+<div class ="code">
+    <pre class="brush: java">
+    public class Computer
+    {
+        private readonly CPU _cpu;
+        private readonly HardDrive _hardDrive;
+        private readonly Memory _memory;
+
+        private const long BootAddress = 1;
+        private const long BootSector = 1;
+        private const int SectorSize = 10;
+
+        public Computer()
+        {
+            _cpu = new CPU();
+            _hardDrive = new HardDrive();
+            _memory = new Memory();
+        }
+
+        public void Start()
+        {
+            _cpu.Freeze();
+            _memory.Load(BootAddress, _hardDrive.Read(BootSector, SectorSize));
+            _cpu.Jump(BootAddress);
+            _cpu.Execute();
+        }
+    }
+
+    public class CPU
+    {
+        public void Freeze()
+        {
+            Console.WriteLine("CPU is frozen");
+        }
+
+        public void Jump(long position)
+        {
+            Console.WriteLine("Jumping to position: {0}", position);
+        }
+
+        public void Execute()
+        {
+            Console.WriteLine("Executing...");
+        }
+    }
+
+    public class HardDrive
+    {
+
+            public byte[] Read(long lba, int size)
+            {
+                var bytes = new byte[size];
+                var random = new Random();
+                random.NextBytes(bytes);
+                return bytes;
+            }
+    }
+
+    public class Memory
+    {
+        public void Load(long position, byte[] data)
+        {
+            Console.WriteLine("Loading data: ");
+            foreach (var b in data)
+            {
+                Console.Write(b+ " ");
+                Thread.Sleep(1000);
+            }
+
+            Console.WriteLine("\nLoading compleded");
+        }
+    }
+
+    public class Program
+    {
+        static void Main()
+        {
+            var computer = new Computer();
+            computer.Start();
+        }
+    }
+    </pre>
 </div>
+ 
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 <?php
 include("Include/footer.html");
 /*
