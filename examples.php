@@ -84,7 +84,7 @@ include("Include/navigation.html");
         Each of this classes has operations which must be performed when <em>Start()</em> method of <strong>Computer</strong> class is called.
     </p>
 
-    <div class ="code">
+    <div class ="codeBox">
         <pre class="brush: java">
         public class Computer
         {
