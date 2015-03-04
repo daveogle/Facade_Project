@@ -200,9 +200,24 @@ footer
 .quote p, .definition p
 {
     margin: 2px 0;
+    font-style: italic;
 }
 
 .code
 {
     font-size: 15px;
+}
+
+h4
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+h6
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.5em;
 }
