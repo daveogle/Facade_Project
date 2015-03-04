@@ -34,30 +34,6 @@ include("Include/navigation.html");
 <div>
 	&nbsp;</div>
 <div>
-	Lets consider another example. Imagine you want to organize a marriage reception. You need to do the following:</div>
-<ul>
-<li>decorate the hall where the event is planned&nbsp;</li>
-<li>music band to play some music</li>
-<li>organize dinner for say 100 people</li>
-<li>snack in the evening for around 50 people</li>
-</ul>
-<div>
-	If you wanted to organize such an event some 10 years back, you wanted to go to a caterer for food, a musical troop for music, and organize flowers and people to decorate them, and so on.</div>
-<div>
-	&nbsp;</div>
-<div>
-	Some twenty years back, we needed to go to the fish market, the meat shop, the vegetable market etc., for the raw materials for the food and then organize a cook so that you have everything ready for the event.</div>
-<div>
-	&nbsp;</div>
-<div>
-	Now, life is really simpler with event managers. You just need to walk to an event manager and tell him that you need a hall decorated with flowers, dinner for 100 people, snacks for 50 people, and need a good music troop to play music while the reception is going on. You don&rsquo;t need to worry about anything, and they will take care of the rest.</div>
-<div>
-	&nbsp;</div>
-<div>
-	This is a typical example for Fa&ccedil;ade. You don&rsquo;t need to interact with many different objects for each and every activity. You will be provided a single interface which will act as a fa&ccedil;ade for many activities. This makes the life of clients much simpler.</div>
-<div>
-	&nbsp;</div>
-<div>
 	Other examples for Fa&ccedil;ade are one stop bill payment shops, a support desk in a big organization which takes all kinds of support requests etc.</div>
 <div>
 	&nbsp;</div>
