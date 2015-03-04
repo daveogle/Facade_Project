@@ -13,12 +13,10 @@ include("Include/navigation.html");
     </br>
 
     <h3>Duplications</h3>
-    <p>If for any reason you have to duplicate the same code again and again in different places, you may want to 
-        create a lead controller that will handle all of the repeating code, helping to reduce code duplication and 
-        improving its maintainability. As it is much easier to change code once, than doing it multiple times in 
-        several places.</p>
-    <p>The client will just call the lead controller to perform actions based on the parameters 
-        provided. </p>
+    <p> Suppose we have three clients accessing the same subsystem. These clients all have code within them that handles accessing the
+        subsystem. This is obviously a duplication of the same code. Using the facade pattern, we can take the code for accessing the 
+        subsystem and place it within the facade class. Now, all three clients need to access only a facade class, rather than having
+        the same code each to access the subsystem independently. </p>
     </br>
 
     <h3>System changes frequently</h3>
@@ -29,7 +27,7 @@ include("Include/navigation.html");
      
     <h3>Facade vs Adapter patterns</h3>
     <p>The Adapter Pattern and the Facade Pattern solve different problems. The intent of the Adapter Pattern is to adapt one classes interface into an expected interface used by an existing client class or classes. The intent of the Facade Pattern is to simplify the API of a subsystem. </p>
-     </br>
+     </br> // expland more ///
 
      <h3>Simple example</h3>
     <p>Let's say that you have been given a task to plan your friend's marriage. If you do everything on your own, 
@@ -42,6 +40,7 @@ include("Include/navigation.html");
     <p>Here, you are behaving as a client who initiates the process, and the wedding planner is working as a "facade" 
         for you, completing the job based on your direction. </p>
 
+    // take Dan's example ///
 </div>
 <?php
 include("Include/footer.html");
