@@ -10,7 +10,6 @@ $questionId = array("question1", "question2", "question3", "question4", "questio
     <p>In the previous page's you have learned about the Façade Design pattern, now it's time to test what
         you have learnt. Answer the following 10 questions to test your knowledge, press 'Check answers' when 
         your done to get your score.</p>
-    <br>
     <div class="quiz-wrapper">
         <?php
         for ($i = 0; $i < 10; $i++) {
