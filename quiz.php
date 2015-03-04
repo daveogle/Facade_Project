@@ -7,7 +7,7 @@ $questionId = array("question1", "question2", "question3", "question4", "questio
 <script src="JavaScript/quiz.js" type="text/javascript"></script>
 <div class ="mainContent">
     <H2>Quiz</H2>
-    <p>In the previous page's you have learned about the Facade Design pattern, now it's time to test what
+    <p>In the previous page's you have learned about the Façade Design pattern, now it's time to test what
         you have learnt. Answer the following 10 questions to test your knowledge, press 'Check answers' when 
         your done to get your score.</p>
     <br>
@@ -25,11 +25,12 @@ $questionId = array("question1", "question2", "question3", "question4", "questio
             echo "</div>";
         }
         ?>
-        <form id="answerQuiz">
-            <input type="submit" value="Check answers">
-        </form>
-        
-        <div class="result">
+        <div class="sols">
+            <div class="result">
+            </div>
+            <form id="answerQuiz">
+                <input type="submit" value="Check answers" class="btn-style">
+            </form>
         </div>
     </div>
 </div>
