@@ -1,8 +1,8 @@
-<link href="CSS/keyFeatures.css" rel="stylesheet" type="text/css"/>
 <?php
 include("Include/header.html");
 include("Include/navigation.html");
 ?>
+<link href="CSS/keyFeatures.css" rel="stylesheet" type="text/css"/>
 <div class ="mainContent">
     <H2>Key Features</H2>
     <p>A breakdown of the key features of the Façade Design Pattern are:</p>        
