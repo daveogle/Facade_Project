@@ -188,3 +188,21 @@ footer
     margin-left: auto;
     margin-right: auto;
 }
+
+.quote, .definition
+{
+    width: 80%;
+    border: 1px solid #AAA;
+    padding: 3px 10px;
+    background: #EEE
+}
+
+.quote p, .definition p
+{
+    margin: 2px 0;
+}
+
+.code
+{
+    font-size: 15px;
+}
