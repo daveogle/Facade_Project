@@ -9,7 +9,7 @@ var q1 = "Q1) In which scenario would use of the Façade Design Pattern be most 
 var q2 = "Q2) Why is it called the Façade Pattern?";
 var q3 = "Q3) How can the Façade Pattern increase system security?";
 var q4 = "Q4) What is the formal description of the Façade Pattern?";
-var q5 = "Q5) How Much of the original system does the Façade Pattern give access to?";
+var q5 = "Q5) How much of the original system does the Façade Pattern give access to?";
 var q6 = "Q6) Name a benefit of encapsulating the existing system with the Façade Pattern.";
 var q7 = "Q7) Select a scenario where the Façade Pattern would apply.";
 var q8 = "Q8) Is it possible to add functionality to the original system with the Façade Pattern?";
@@ -40,19 +40,19 @@ var answers5 = ["As much or as little as you need it to.",
     "All of it.",
     "None of it.",
     "Only the essential Classes."];
-var answers6 = ["Enables Swapping out the old system for a new one with reduced effort.",
+var answers6 = ["Enables swapping out the old system for a new one with reduced effort.",
     "Enables better interaction between Classes.",
     "Ensures the class hierarchy is easily visible.",
     "Allows similar Classes to inherit from a common abstract Class."];
 var answers7 = ["You want to avoid the need for the everybody to have to learn an existing complex system.",
-    "You want to decouple a set of implementations from the set of objects using them.",
+    "You want to use a simple subsystem.",
     "You want to attach extra responsibilities to an object dynamically.",
     "You want to match an existing object beyond your control to a particular interface."];
 var answers8 = ["Yes, the methods written for the Façade Class may be supplemented by new routines for the new functionality. ",
     "No, as the Façade Class is separate from the existing system.",
     "No, as this would be a violation of the Façade Pattern Principles.",
     "Yes, but only if the functionality in no way interacts with the existing system."];
-var answers9 = ["Some functionality available in the original system may be unavailable to the client.",
+var answers9 = ["You may end up writting and using unnecessary wrapper classes.",
     "There is no way to add further functionality to the system.",
     "Everyone must have a full understanding of the original system for the pattern to work.",
     "There is no way of hiding any part of the existing system."];
