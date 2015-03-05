@@ -3,7 +3,7 @@ include("Include/header.html");
 include("Include/navigation.html");
 ?>
 <div class ="mainContent">
-    <h2><i>When should I use the Façade Design Pattern?</i></h2>
+    <h2>When should I use the Façade Design Pattern?</h2>
     
     <h3>A simple interface in a complex system</h3>
            <p>Now we have seen what the Façade pattern is we will turn our attention to when to use it.
@@ -13,6 +13,7 @@ include("Include/navigation.html");
                  been hidden from the caller by the façade.
                 Façade can be applied when a there are a lot of complex classes in a subsystem in order to make access 
                 simpler for the client and to define a single point of entry. This has the added advantage of avoiding the client accessing the subsystem directly, as we will see. </p>
+    <br>
 
     <h3>Duplications</h3>
     <p> Suppose we have three clients accessing the same subsystem. These clients all have code within them that handles accessing the
@@ -22,7 +23,9 @@ include("Include/navigation.html");
     </br>
 
     <h3>System changes frequently</h3>
-    <p>Façade accesses the subsystems for the client, so if they change often, it does not affect the client, as façade deals with it. </p>
+        <p>A interesting extension to the Façade pattern is encapsulation, as we will see later in <strong>Variations.</strong>
+          Because the Façade accesses the subsystem for the client swapping out the subsystem can be made a lot easier through the use of the Façade class.</p>
+     <br>
 
     <img src ="Images/facade_adv.jpg"  title="System Changes Example" alt ="System changes">
     
