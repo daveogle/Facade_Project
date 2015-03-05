@@ -37,3 +37,8 @@ and open the template in the editor.
     margin-left: 10px;
     clear: both;
 }
+.question label
+{
+    position: relative;
+    z-index: 999;
+}
