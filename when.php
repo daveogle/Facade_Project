@@ -5,14 +5,17 @@ include("Include/navigation.html");
 <div class ="mainContent">
     <h2>When should I use the Façade Design Pattern?</h2>
 
-    <h3>A simple interface in a complex system</h3>
+    <h3>A simple interface to a complex system</h3>
     <p>Now we have seen what the Façade pattern is we will turn our attention to when to use it.
         The façade pattern is best used in situations where you want to have a simple single interface 
         to an already existing complex subsystem.
         For example, in web services, one web service might access a number of smaller services that have 
         been hidden from the caller by the façade.
-        Façade can be applied when a there are a lot of complex classes in a subsystem in order to make access 
-        simpler for the client and to define a single point of entry. This has the added advantage of avoiding the client accessing the subsystem directly, as we will see. </p>
+        A façade can be applied when a there are a lot of complex classes in a subsystem in order to make access 
+        simpler for the client and to define a single point of entry. This has the added advantage of avoiding the client accessing the subsystem directly, 
+        as we will see.
+        However overuse of façades (ie. creating wrapper classes for already simple systems) can waste programming time and reduce the overall efficiency of your system.
+    </p>
 
     <h3>Duplications</h3>
     <p> Suppose we have three clients accessing the same subsystem. These clients all have code within them that handles accessing the
