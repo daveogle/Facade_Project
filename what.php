@@ -23,7 +23,7 @@ include("Include/navigation.html");
         In essence the basic purpose of the Façade Design Pattern is to offer a simplified, easy to use interface to a more complicated subsystem as illustrated below.
     </p>
     
-    <img src="Images/simpleFacade.png" alt="Façade Example" class="center" style="width: 60%; height: 60%; "/>
+    <img src="Images/simpleFacade.png" alt="Façade Example" title="A simple example of the Façade Pattern" class="center" style="width: 60%; height: 60%; "/>
     
     <p>    
         This differs in an important way from a very similar structural design pattern, 
@@ -37,7 +37,7 @@ include("Include/navigation.html");
     
     <p>
         This decoupling between client and complex subsystem also helps reduce the number of objects which the client has to interact with,
-        helping to adhere to the 'Principle of Least Knowledge' which is described more formally as the 'Law of demeter'.
+        helping to adhere to the 'Principle of Least Knowledge' which is described more formally as the 'Law of Demeter'.
     </p>
     
     <div class="definition center">

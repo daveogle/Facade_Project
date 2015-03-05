@@ -80,6 +80,7 @@ $(document).ready(function () {
 //Answer Quiz
     $("#answerQuiz").submit(function (e) {
         e.preventDefault();
+        $("#answerQuiz").hide();
         score = 0;
         var correctAnswer = false;
         $('input:radio').each(function () {

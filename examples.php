@@ -6,15 +6,15 @@ include("Include/navigation.html");
     <H2>Real World Examples</H2>    
 
     <p>
-        Facades are all around us in the real world.  Operating systems are one such example - you don't see all the inner workings of your computer, 
-        but the OS provides a simplified interface to use the machine. Buildings also have a facade - the exterior of the building. 
+        Façades are all around us in the real world.  Operating systems are one such example - you don't see all the inner workings of your computer, 
+        but the OS provides a simplified interface to use the machine. Buildings also have a façade - the exterior of the building. 
         Wikipedia gives us a nice link between software architecture and standard architecture:
     </p>
 
     <blockquote>
         <div class="quote center">
             <p>
-                In architecture, the facade of a building is often the most important from a design standpoint, as it sets the tone for the rest of the building.
+                In architecture, the façade of a building is often the most important from a design standpoint, as it sets the tone for the rest of the building.
             </p>
         </div>
     </blockquote>
@@ -22,8 +22,8 @@ include("Include/navigation.html");
     <p>
         Lets have a look at couple of real world examples. Take a car, starting a car involves many complicated steps. 
         Imagine how it would be if you had to adjust a number of valves and various controllers. 
-        The facade you have got is just the ignition key. On turn of a key it sends an instruction to multiple subsystems, 
-        executes a sequence of operations and completes the task. All you know is a key turn which acts as a facade and simplifies your job.
+        The façade you have got is just the ignition key. On turn of a key it sends an instruction to multiple subsystems, 
+        executes a sequence of operations and completes the task. All you know is a key turn which acts as a façade and simplifies your job.
     </p>
     
     <p>
@@ -35,7 +35,7 @@ include("Include/navigation.html");
     </p>
     
     <p>
-        In this scenario, oven provides you with preprogrammed switches which can be considered as a facade. 
+        In this scenario, oven provides you with preprogrammed switches which can be considered as a façade. 
         On a click on of a single switch the job gets done. That single menu switch works as an abstraction layer between you and the internal components.
     </p>
     
