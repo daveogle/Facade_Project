@@ -13,23 +13,18 @@ include("Include/navigation.html");
         been hidden from the caller by the façade.
         Façade can be applied when a there are a lot of complex classes in a subsystem in order to make access 
         simpler for the client and to define a single point of entry. This has the added advantage of avoiding the client accessing the subsystem directly, as we will see. </p>
-    <br>
 
     <h3>Duplications</h3>
     <p> Suppose we have three clients accessing the same subsystem. These clients all have code within them that handles accessing the
         subsystem. This is obviously a unnecessary duplication of the same code. Using the façade pattern, we can take the code for accessing the 
         subsystem and place it within the façade class. Now, all three clients need only access the façade class, rather than having
         to access the subsystem independently. </p>
-    </br>
 
     <h3>System changes frequently</h3>
     <p>A interesting extension to the Façade pattern is encapsulation, as we will see later in <strong>Variations.</strong>
         Because the Façade accesses the subsystem for the client swapping out the subsystem can be made a lot easier through the use of the Façade class.</p>
-    <br>
 
     <img src ="Images/facade_adv.jpg"  title="System Changes Example" alt ="System changes">
-
-    </br>
 
     <h3>Façade vs Adapter patterns</h3>
     <p>The Adapter Pattern and the Façade Pattern solve similar but different problems. 
