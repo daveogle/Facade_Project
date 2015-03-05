@@ -13,6 +13,7 @@ body
 
 footer
 {
+    clear: both;
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;  
 }
@@ -257,6 +258,7 @@ h6
 {
     display: block;
     height: 70px;
+    clear: both;
 }
 
 .table-wrapper tbody
