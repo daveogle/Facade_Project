@@ -15,29 +15,14 @@ $(document).ready(function () {
     }
     var pgNo = getPageNumber(filename);
     colourUpTo(pgNo);
-    var currentColour;
-
-    $(".box").hover(
-            function () {
-                currentColour = $(this).css('backgroundColor');
-                //stuff to do on mouse enter
-                $(this).css({'background-color': 'red', 'box-shadow': '0px 0px 0px #888888'});
-            },
-            function () {
-                //stuff to do on mouse leave
-                if (currentColour === 'rgb(255, 192, 203)')
-                {
-                    $(this).css({'background-color': 'pink', 'box-shadow': '10px 10px 5px #888888'});
-                }
-                else
-                {
-                    $(this).css({'background-color': 'yellow', 'box-shadow': '10px 10px 5px #888888'});
-                }
-
-            });
+    //var currentColour;
 
     //Ajax call on a box clicked 
-    $(".box").click(function () {
+    $("li .box").click(function () {
+        ajaxCall(event.target.id);
+    });
+    
+    $("li .doneBox").click(function () {
         ajaxCall(event.target.id);
     });
 
@@ -73,7 +58,6 @@ $(document).ready(function () {
             data: 'page=' + page,
             success: function (msg)
             {
-                alert(msg);
                 location.href = msg;
             },
             error: function ()
@@ -152,7 +136,9 @@ function colourUpTo(pageNumber)
 {
     for (var i = 1; i <= pageNumber; i++)
     {
-        document.getElementById(getPageName(i)).style.background = "pink";
+        //var page = $(getPageName(i));
+        document.getElementById(getPageName(i)).style.background = "rgb(58, 87, 149)";
+        document.getElementById(getPageName(i)).className = "doneBox";
     }
 }
 

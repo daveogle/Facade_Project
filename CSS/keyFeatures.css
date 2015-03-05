@@ -10,24 +10,29 @@ and open the template in the editor.
 
 p
 {
-    margin-bottom: 10%;
+    //margin-bottom: 10%;
 }
 
 .table-wrapper
 {
-    height: 140%;
+    //height: 140%;
 }
 
 .table-wrapper table
 {
-    background-color: buttonface;
-    font-size: 26px;
-    box-shadow:0px 0px 80px 50px buttonface;
-    margin-left: 10%;
-    margin-right: 10%;
+    //background-color: buttonface;
+    font-size: 1em;
+    width: 80%;
+    border: 1px solid #AAA;
+    padding: 3px 10px;
+    background: #EEE;
+    //box-shadow:0px 0px 80px 50px buttonface;
+    //margin-left: 10%;
+    //margin-right: 10%;
 }
 
 .table-wrapper td
 {
-    padding-bottom: 5%;
+    padding: 0 5px 1%;
+    //padding-bottom: 1%;
 }
