@@ -92,7 +92,7 @@ $(document).ready(function () {
                 {
                     score = score + 1;
                     correctAnswer = true;
-                    $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/correct.png\" alt=\"right answer\" style=\"width:80px;height:80px;vertical-align: middle;\">");
+                    $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/correct.png\" alt=\"right answer\" style=\"width:70px;height:70px;vertical-align: middle;margin-top:-20px;\">");
                     $(this).replaceWith(function () {
                         return $('<img src="Images/correct.png" alt="right answer" style="width:30px;height:30px;vertical-align: middle;">');
                     });
@@ -123,7 +123,7 @@ $(document).ready(function () {
             }
             if (parseInt(id.charAt(2)) === 3 && !correctAnswer)
             {
-                $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/wrong.jpeg\" alt=\"wrong answer\" style=\"width:80px;height:80px;vertical-align: middle;\">");
+                $('#question' + (qNumber) + ' .resultImage').html("<img src=\"Images/wrong.jpeg\" alt=\"wrong answer\" style=\"width:70px;height:70px;vertical-align: middle;margin-top:-20px;\">");
             }
             else if (parseInt(id.charAt(2)) === 3)
             {
