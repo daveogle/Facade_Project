@@ -33,5 +33,6 @@ and open the template in the editor.
 
 .question span
 {
+    float: left;
     margin-left: 10px;
 }
