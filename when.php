@@ -24,7 +24,8 @@ include("Include/navigation.html");
     <p>A interesting extension to the Façade pattern is encapsulation, as we will see later in <strong>Variations.</strong>
         Because the Façade accesses the subsystem for the client swapping out the subsystem can be made a lot easier through the use of the Façade class.</p>
 
-    <img src ="Images/facade_adv.jpg"  title="System Changes Example" alt ="System changes">
+    <img src ="Images/CodeChanges.png"  title="System Changes Example" alt ="System changes" style="width: 40%; height: 40%;">
+    <img src ="Images/CodeChanges2.png"  title="System Changes Example" alt ="System changes" style="width: 40%; height: 40%;">
 
     <h3>Façade vs Adapter patterns</h3>
     <p>The Adapter Pattern and the Façade Pattern solve similar but different problems. 
