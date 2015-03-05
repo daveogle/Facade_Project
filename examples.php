@@ -166,6 +166,40 @@ include("Include/navigation.html");
             }
         }
         </pre>
+        <h3>Examples in game development</h3>
+        <h4>Tic-Tac-Toe</h4>
+        <p>When a player wants to make a move it must tell:
+        <ul>
+            <li>the “board” to make such a move</li>
+            <li>the “control manager” to set up for next turn (halt the game, skip a turn, change players)</li> 
+            <li>The “view administrator” to announce the winner, loser, or draw if the game is over</li>
+        </ul>
+To avoid this complication, player interacts with a single interface IGame (the façade)</p>
+        <div class ="codeBox">
+            <pre class="brush: java">
+            public abstract class APlayer {
+	protected IGame game;
+	public APlayer(IGame g, …){
+		this.game = g;
+		…
+	}
+}
+public class ComputerPlayer extends APlayer {
+	…
+	public void takeTurn() {
+		…
+		getGame().takePosition(p.x, p.y, this, …);
+	}
+}</pre></div>
+    <p>Another example may be a Graphical User Interface that calls many other classes to display something like message box:
+</p>
+<div class ="codeBox">
+    <pre class="brush: java">// GraphicsInterface acts as façade for hiding
+// the detailed operations involved in creating
+// a messagebox.
+GraphicsInterface::displayMsgBox("CoolTexture",
+"Roman.fnt", "Hello World");</pre></div>
+    
     </div>
  
 <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
