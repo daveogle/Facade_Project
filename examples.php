@@ -40,37 +40,6 @@ include("Include/navigation.html");
     </p>
 
     <p>
-        Lets consider another example. Imagine you want to organize a marriage reception. You need to do the following:
-    </p>
-    <ul>
-        <li>decorate the hall where the event is planned</li>
-        <li>music band to play some music</li>
-        <li>organize dinner for say 100 people</li>
-        <li>snack in the evening for around 50 people</li>
-    </ul>
-
-    <p>
-        If you wanted to organize such an event some 10 years back, you wanted to go to a caterer for food, 
-        a musical troop for music, and organize flowers and people to decorate them, and so on.
-    </p>
-
-    <p>
-        Some twenty years back, we needed to go to the fish market, the meat shop, the vegetable market etc., 
-        for the raw materials for the food and then organize a cook so that you have everything ready for the event.
-    </p>
-
-    <p>
-        Now, life is really simpler with event managers. You just need to walk to an event manager and tell him that you need a hall decorated with flowers, 
-        dinner for 100 people, snacks for 50 people, and need a good music troop to play music while the reception is going on. 
-        You don't need to worry about anything, and they will take care of the rest.
-    </p>
-
-    <p>
-        This is a typical example for Façade. You don’t need to interact with many different objects for each and every activity. 
-        You will be provided a single interface which will act as a façade for many activities. This makes the life of clients much simpler.
-    </p>     
-
-    <p>
         Other examples for Façade are one stop bill payment shops, a support desk in a big organization which takes all kinds of support requests etc.
     </p>
 
