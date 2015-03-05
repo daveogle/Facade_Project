@@ -21,13 +21,13 @@ $(document).ready(function () {
     $("li .box").click(function () {
         ajaxCall(event.target.id);
     });
-    
+
     $("li .doneBox").click(function () {
         ajaxCall(event.target.id);
     });
 
     $("#right").click(function () {
-        if(pgNo === 8)
+        if (pgNo === 8)
         {
             alert("Error");
         }
@@ -39,7 +39,7 @@ $(document).ready(function () {
     });
 
     $("#left").click(function () {
-        if(pgNo === 1)
+        if (pgNo === 1)
         {
             alert("Error");
         }
@@ -77,13 +77,13 @@ function getPageNumber(pageName)
         case "index.php" :
             return 1;
             break;
-        case "what.php" :
+        case "keyFeatures.php" :
             return 2;
             break;
-        case "when.php" :
+        case "what.php" :
             return 3;
             break;
-        case "keyFeatures.php" :
+        case "when.php" :
             return 4;
             break;
         case "variations.php" :
@@ -108,14 +108,14 @@ function getPageName(pageNumber)
         case  1 :
             return "index";
             break;
-        case  2 :
+        case 2 :
+            return "keyFeatures";
+            break;
+        case  3 :
             return "what";
             break;
-        case 3 :
-            return "when";
-            break;
         case 4 :
-            return "keyFeatures";
+            return "when";
             break;
         case 5 :
             return "variations";
